@@ -2,8 +2,6 @@ class ArticlesController < ApplicationController
   before_action :set_article, only: [ :edit, :update, :destroy ]
 
   def index
-    puts "View paths: #{view_paths.inspect}"
-    puts "article count : #{Article.count}"
     @articles = Article.all
   end
 
